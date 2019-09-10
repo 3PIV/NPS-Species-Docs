@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+# AWS
+## Prerequisites
+Before being able to use the Seelab's MaxEnt application, it is paramount that a user is able to: 
 
-You can use the [editor on GitHub](https://github.com/3PIV/NPS-Species-Docs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+1. Be able to **Connect** to AWS
+2. Be able to **Transfer** files with AWS
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+To ensure this two prerequisites are satisfied, below is a set of instructions for Windows and *NIX (Mac, Linux, Unix) machines. Connecting with a Windows machine can be done with PuTTY or WSL (Windows Subsystem for Linux). Please contact your administrator to determine which route is permitted in the workplace.
+### Windows
+  Before continuing with PuTTY or WSL - follow the [General Pre-Requisites for Windows](./Windows/WinGenRequisites/WinGenRequisites.md). There are two ways to connect/transfer with AWS from Windows, both perform equivalently.
+* #### Windows with Putty
+  1. Install PuTTY on your Windows Machine
+  2. [Convert your private key (`.pem` file) using PuTTYgen](./Windows/PuTTY/PuTTYgen.md)
+  3. [**Connect** to your instance using PuTTY](./Windows/PuTTY/ConnectWithPuTTY.md)
+  4. [**Transfer** files to Your Linux Instance Using WinSCP](./Windows/PuTTY/WinSCP.md)
+* #### Windows with WSL
+  1. Install WSL and a Linux Distribution on your local computer
+  2. Copy the private key from Windows to WSL
+      * In a WSL terminal window, copy the `.pem` file (for the key pair that you specified when you launched the instance) from Windows to WSL. Note the fully qualified path to the `.pem` file on WSL to use when connecting to your instance.
+      * `cp /mnt/<Windows drive letter>/path/my-key-pair.pem ~/WSL-path/my-key-pair.pem`
+  3. [**Connect** to your instance using WSL](./Windows/WSL/ConnectingWSL.md)
+  4. [**Transfer** files to Your Linux Instance using SCP](./Windows/WSL/TransferringWSL.md)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/3PIV/NPS-Species-Docs/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Seelab Server
