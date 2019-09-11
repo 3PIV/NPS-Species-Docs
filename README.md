@@ -14,14 +14,12 @@ To ensure this two prerequisites are satisfied, below is a set of instructions f
 Before continuing with PuTTY or WSL - follow the [General Pre-Requisites for Windows](./Windows/WinGenRequisites/WinGenRequisites.md). There are two ways to connect/transfer with AWS from Windows, both perform equivalently.
 
 * #### Windows with Putty
-
 1. Install PuTTY on your Windows Machine
 2. [Convert your private key (`.pem` file) using PuTTYgen](./Windows/PuTTY/PuTTYgen.md)
 3. [**Connect** to your instance using PuTTY](./Windows/PuTTY/ConnectWithPuTTY.md)
 4. [**Transfer** files to Your Linux Instance Using WinSCP](./Windows/PuTTY/WinSCP.md)
 
 * #### Windows with WSL
-
 1. Install WSL and a Linux Distribution on your local computer
 2. Copy the private key from Windows to WSL
 * In a WSL terminal window, copy the `.pem` file (for the key pair that you specified when you launched the instance) from Windows to WSL. Note the fully qualified path to the `.pem` file on WSL to use when connecting to your instance.
@@ -37,7 +35,6 @@ Before continuing please follow the [General Pre-Requisites for Linux](./NIX/NIX
 ### Installing Git and Docker on Your Instance
 1. Connect to your machine, using the methods above.
 2. When at the command prompt, enter the following commands:
-
     ```
     #Get the most up to date packages for your instance:
     sudo yum update -y
@@ -50,32 +47,27 @@ Before continuing please follow the [General Pre-Requisites for Linux](./NIX/NIX
     ```
 
 3. Now, install the most recent Docker community edition
-
     ```
     sudo amazon-linux-extras install docker
     ```
 
 4. Start the docker service
-
     ```
     sudo service docker start
     ```
 
 5. Add the default user to the Docker user list
-
     ```
     sudo usermod -a -G docker ec2-user
     ```
 
 6. Log out of the instance, then reconnect to your instance.
 7. Ensure Docker was successfully installed
-
     ```
     docker info
     ```
 
 8. Using git, get the latest copy of Seelab's MaxEnt Application
-
     ```
     git clone https://github.com/tpcolson/maxent-docker.git
     ```
@@ -83,13 +75,10 @@ Before continuing please follow the [General Pre-Requisites for Linux](./NIX/NIX
 9. If everything is done correctly, the Directory containing the files should be in the home Directory, run `ls` to list the files.
 * If everything is correct, `ls` will show a folder named `maxent-docker`
 * use cd to open the `maxent-docker` directory
-
     ```
     cd maxent-docker
     ```
-
 * `ls` to show the contents of the directory
-
     ```
     # the contents should be:
     mountdata/
