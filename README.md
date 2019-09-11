@@ -63,22 +63,22 @@ docker info
 git clone https://github.com/tpcolson/maxent-docker.git
 ```
 9. If everything is done correctly, the Directory containing the files should be in the home Directory, run `ls` to list the files.
-  * If everything is correct, `ls` will show a folder named `maxent-docker`
-  * use cd to open the `maxent-docker` directory
-  ```
-  cd maxent-docker
-  ```
-  * `ls` to show the contents of the directory
-  
-  ```
-  # the contents should be:
-  mountdata/
-  windows-helper/
-  Dockerfile
-  LICENSE
-  README.md
-  npsdocker.sh
-  ```
+* If everything is correct, `ls` will show a folder named `maxent-docker`
+* use cd to open the `maxent-docker` directory
+```
+cd maxent-docker
+```
+* `ls` to show the contents of the directory
+
+```
+# the contents should be:
+mountdata/
+windows-helper/
+Dockerfile
+LICENSE
+README.md
+npsdocker.sh
+```
 10. Transfer an `ENVIRONMENTS.zip` to the `maxent-docker/mountdata` directory using a method defined above. [**Transfer** with PuTTY/WinSCP](./Windows/PuTTY/WinSCP.md), [**Transfer** with Windows and WSL](./Windows/WSL/TransferringWSL.md), [**Transfer** with Linux](./Windows/WSL/TransferringWSL.md) 
 
 # Seelab Server
