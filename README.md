@@ -18,8 +18,8 @@ Before continuing with PuTTY or WSL - follow the [General Pre-Requisites for Win
 * #### Windows with WSL
 1. Install WSL and a Linux Distribution on your local computer
 2. Copy the private key from Windows to WSL
-    * In a WSL terminal window, copy the `.pem` file (for the key pair that you specified when you launched the instance) from Windows to WSL. Note the fully qualified path to the `.pem` file on WSL to use when connecting to your instance.
-    * `cp /mnt/<Windows drive letter>/path/my-key-pair.pem ~/WSL-path/my-key-pair.pem`
+* In a WSL terminal window, copy the `.pem` file (for the key pair that you specified when you launched the instance) from Windows to WSL. Note the fully qualified path to the `.pem` file on WSL to use when connecting to your instance.
+* `cp /mnt/<Windows drive letter>/path/my-key-pair.pem ~/WSL-path/my-key-pair.pem`
 3. [**Connect** to your instance using WSL](./Windows/WSL/ConnectingWSL.md)
 4. [**Transfer** files to Your Linux Instance using SCP](./Windows/WSL/TransferringWSL.md)
 
