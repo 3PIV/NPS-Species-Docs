@@ -74,10 +74,12 @@ Before continuing please follow the [General Pre-Requisites for Linux](./NIX/NIX
 
 9. If everything is done correctly, the Directory containing the files should be in the home Directory, run `ls` to list the files.
 * If everything is correct, `ls` will show a folder named `maxent-docker`
+
 * use cd to open the `maxent-docker` directory
     ```
     cd maxent-docker
     ```
+
 * `ls` to show the contents of the directory
     ```
     # the contents should be:
