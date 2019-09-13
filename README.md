@@ -93,4 +93,5 @@ Before continuing please follow the [General Pre-Requisites for Linux](./NIX/NIX
 
 10. Transfer an `ENVIRONMENTS.zip` to the `maxent-docker/mountdata` directory using a method defined above. [**Transfer** with PuTTY/WinSCP](./Windows/PuTTY/WinSCP.md), [**Transfer** with Windows and WSL](./Windows/WSL/TransferringWSL.md), [**Transfer** with Linux](./Windows/WSL/TransferringWSL.md) 
 
+11. [Run](./Maxent/RunningMaxentDocker.md) the Maxent Docker Application.
 # Seelab Server
